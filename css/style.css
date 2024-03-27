@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+header{
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.wrapper
+{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header .wrapper
+{
+    max-width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.name
+{
+    display: flex;
+    justify-content: left;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    
+}
+
+nav ul li a:link {
+    display:flex;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#hero {
+    height: 600px;
+    
+    background-color: #7251B5;
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    filter: grayscale(70%);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+h1{
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px #000;
+    max-width: 60%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.496);
+    padding: 20px;
+
+}
+
+
+img{
+    width: 100%;
+}
+
+
+#services .wrapper{
+    background-color: #fafafa;
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 40px;
+}
+
+#services article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#services article h2{
+    margin-bottom: 0;
+
+}
+
+#services a:link,
+#services a:visited {
+  display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-top: auto;}
