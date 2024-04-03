@@ -75,12 +75,26 @@ h1{
 
 }
 
-
 img{
     width: 100%;
 }
 
+/* section 1 */
+.woman{
+    display: flex;
+    align-items: center; 
+}
 
+.woman div {
+    width: 65%;
+}
+
+.woman img{
+    width: 35%;
+    
+}
+
+/* section 2 */
 #services .wrapper{
     background-color: #fafafa;
     max-width: 940px;
@@ -88,6 +102,10 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     
     gap: 40px;
+}
+
+.wrapper article h3{
+    margin-bottom: 0;
 }
 
 #services article{
@@ -99,6 +117,7 @@ img{
 
 #services article h2{
     margin-bottom: 0;
+    text-align: center;
 
 }
 
@@ -111,4 +130,57 @@ img{
   text-decoration: none;
   border: 2px solid #000;
   border-radius: 4px;
-  margin-top: auto;}
+  margin-top: auto;
+}
+
+/* section 3 */
+#work h2,
+#work p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "img1 img1 img1 img2 img2 img2 "
+    "img3 img3 img4 img4 img5 img5"
+    ;
+}
+
+.gallery img:nth-child(1){
+    grid-area: img1;    
+}
+
+.gallery img:nth-child(2){
+    grid-area: img2; 
+
+}
+
+.gallery img:nth-child(3){
+    grid-area: img3;
+    
+}
+
+.gallery img:nth-child(4){
+    grid-area: img4;
+    
+}
+
+.gallery img:nth-child(5){
+    grid-area: img5;
+    
+}
+
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
