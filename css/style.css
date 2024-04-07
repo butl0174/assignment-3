@@ -1,5 +1,10 @@
 body{
     margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h2{
+    font-size: 2rem;
 }
 
 * {
@@ -38,21 +43,20 @@ nav ul{
     display: flex;
     justify-content: right;
     list-style: none;
-    
 }
 
 nav ul li a:link {
     display:flex;
     padding: 10px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     
 }
 
 #hero {
     height: 600px;
     
-    background-color: #7251B5;
+    background-color: #771598;
     background-image: url(../images/hands-typing.jpg);
     background-size: cover;
     filter: grayscale(70%);
@@ -95,30 +99,27 @@ img{
 }
 
 /* section 2 */
-#services .wrapper{
+
+#services{
     background-color: #fafafa;
-    max-width: 940px;
+    padding: 2em 0;
+}
+
+.grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 40px; 
 }
 
-.wrapper article h3{
-    margin-bottom: 0;
-}
-
-#services article{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-#services article h2{
-    margin-bottom: 0;
+#services h2{
     text-align: center;
+}    
 
+.grid article{
+    background-color: #fff;
+    padding: 1em;
 }
 
 #services a:link,
@@ -133,14 +134,31 @@ img{
   margin-top: auto;
 }
 
+/* not working */
+div .btn{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+
+#services a:hover,
+#services a:focus{
+    background-color: #fff;
+    color: black;
+}
+
 /* section 3 */
 #work h2,
 #work p {
     max-width: 600px;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; 
+    padding-bottom: 20px;
 }
 
+#work h2{
+    padding-top: 40px;
+}
 
 .gallery{
     display: grid;
@@ -151,6 +169,8 @@ img{
     "img1 img1 img1 img2 img2 img2 "
     "img3 img3 img4 img4 img5 img5"
     ;
+
+    padding-bottom: 40px;
 }
 
 .gallery img:nth-child(1){
