@@ -46,7 +46,7 @@ nav ul{
     
 }
 
-nav ul li a:link {
+nav a {
     display:flex;
     padding: 10px;
     text-decoration: none;
@@ -57,7 +57,7 @@ nav ul li a:link {
 #hero {
     height: 600px;
     
-    background-color: #771598;
+    background-color: #fff;
     background-image: url(../images/hands-typing.jpg);
     background-size: cover;
     filter: grayscale(70%);
@@ -121,6 +121,8 @@ img{
 .grid article{
     background-color: #fff;
     padding: 1em;
+    display:flex;
+    flex-direction: column;
 }
 
 #services a:link,
@@ -133,6 +135,7 @@ img{
   border: 2px solid #000;
   border-radius: 4px;
   margin-top: auto;
+  align-self: start;
 }
 
 /* not working */
